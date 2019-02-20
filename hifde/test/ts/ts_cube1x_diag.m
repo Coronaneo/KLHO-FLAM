@@ -3,13 +3,13 @@
 
 
   % set default parameters
-vd = [4:5];
+vd = [4:6];
 time = zeros(length(vd),2);
 timefac = zeros(length(vd),1);
 rele = zeros(length(vd),2);
 NN = zeros(length(vd),1);
 for nn = 1:length(vd)
-    n = 2^vd(nn);
+    n = round(2^vd(nn));
     occ = 64;
     rank_or_tol = 1e-6;
     skip = 2;
