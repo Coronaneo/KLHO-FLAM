@@ -4,7 +4,7 @@
 
 
   % set default parameters
-vd = [4:0.25:6];
+vd = [4:5];
 time = zeros(length(vd),2);
 timefac = zeros(length(vd),1);
 rele = zeros(length(vd),2);
@@ -15,7 +15,7 @@ for nn = 1:length(vd)
     rank_or_tol = 1e-6;
     skip = 2;
     symm = 'p';
-    spdiag = 0;
+    spdiag = 1;
 
   % initialize
   N = (n - 1)^3;
