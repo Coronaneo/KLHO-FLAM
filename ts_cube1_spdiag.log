@@ -139,3 +139,10 @@ Elapsed time is 75.360408 seconds.
 mem: 1633.97 (MB)
 mv: 8.6432e-06 /    5 / 7.2332e-01 (s)
 sv: 6.9575e-04 /    3 / 9.5561e-01 (s)
+spdiag_mv: 1.9626e-16 / 3.9539e+03 (s)
+spdiag_sv: 5.0148e-16 / 3.7719e+03 (s)
+>> >> >> [Warning: MATLAB has disabled some advanced graphics rendering features by
+switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> MATLAB: management.cpp:671: find: Assertion `' failed.
+MATLAB: management.cpp:671: find: Assertion `' failed.
