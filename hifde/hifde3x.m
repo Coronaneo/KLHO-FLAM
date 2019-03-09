@@ -40,7 +40,7 @@
 %    See also HIFDE2, HIFDE2X, HIFDE3, HIFDE_CHOLMV, HIFDE_CHOLSV, HIFDE_DIAG,
 %    HIFDE_LOGDET, HIFDE_MV, HIFDE_SPDIAG, HIFDE_SV, HYPOCT, ID.
 
-function [F,countt] = hifde3x(A,x,occ,rank_or_tol,opts)
+function F = hifde3x(A,x,occ,rank_or_tol,opts)
   start = tic;
 
   % set default parameters
@@ -508,7 +508,6 @@ function [F,countt] = hifde3x(A,x,occ,rank_or_tol,opts)
   F.factors = F.factors(1:n);
   if opts.verb
     fprintf([repmat('-',1,80) '\n'])
-    countt = toc(start);
     toc(start)
   end
 end

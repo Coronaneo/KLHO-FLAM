@@ -13,7 +13,7 @@
 %
 %    See also HIFDE2, HIFDE2X, HIFDE3, HIFDE3X, HIFDE_SPDIAG.
 
-function [D,countt] = hifde_diag(F,dinv,opts)
+function D = hifde_diag(F,dinv,opts)
   start = tic;
 
   % set default parameters
@@ -254,7 +254,6 @@ function [D,countt] = hifde_diag(F,dinv,opts)
   end
   if opts.verb
     fprintf([repmat('-',1,80) '\n'])
-    countt = toc(start);
     toc(start)
   end
 
