@@ -13,7 +13,7 @@
 %
 %    See also HIFDE2, HIFDE2X, HIFDE3, HIFDE3X, HIFDE_SPDIAG.
 
-function D = hifde_diag(F,dinv,opts)
+function [D,tt] = hifde_diag(F,dinv,opts)
   start = tic;
 
   % set default parameters
@@ -243,7 +243,8 @@ function D = hifde_diag(F,dinv,opts)
 
     % print summary
     if opts.verb
-      fprintf('%3d | %12d | %12d | %10.2e (s)\n',lvl,nzget,nzadd,toc)
+        tt = toc;
+      fprintf('%3d | %12d | %12d | %10.2e (s)\n',lvl,nzget,nzadd,tt)
     end
   end
 
