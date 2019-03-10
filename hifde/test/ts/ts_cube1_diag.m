@@ -15,7 +15,7 @@ for nn = 1:length(vd)
     rank_or_tol = 1e-6;
     skip = 2;
     symm = 'p';
-    spdiag = 0;
+    spdiag = 1;
 
   % initialize
   N = (n - 1)^3;

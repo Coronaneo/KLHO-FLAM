@@ -3,7 +3,7 @@
 
 
   % set default parameters
-vd = [4:6];
+vd = [4:0.5:6];
 time = zeros(length(vd),2);
 timefac = zeros(length(vd),1);
 rele = zeros(length(vd),2);
