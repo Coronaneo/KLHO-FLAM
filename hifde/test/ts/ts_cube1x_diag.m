@@ -14,7 +14,7 @@ for nn = 1:length(vd)
     rank_or_tol = 1e-6;
     skip = 2;
     symm = 'p';
-    spdiag = 1;
+    spdiag = 0;
 
   % initialize
   [x1,x2,x3] = ndgrid((1:n-1)/n);
